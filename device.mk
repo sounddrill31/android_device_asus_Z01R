@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2021 The LineageOS Project
+# Copyright (C) 2018-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -251,7 +251,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -281,6 +282,7 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0.vendor \
     android.hidl.memory@1.0.vendor \
+    libhidlmemory.vendor:64 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -381,9 +383,12 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
-# QTI
+# QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
+    libsqlite.vendor \
     libvndfwk_detect_jni.qti.vendor
 
 PRODUCT_COPY_FILES += \
@@ -487,6 +492,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
+    libpng.vendor:32 \
     libwifi-hal-qcom \
     libwpa_client \
     WifiOverlay \
