@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.5 \
+    android.hardware.camera.provider@2.6:64 \
     libcamera2ndk_vendor:32 \
     libdng_sdk.vendor \
     libgui_shim \
@@ -294,6 +294,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
+
+# IRSC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Keylayout
 PRODUCT_COPY_FILES += \
