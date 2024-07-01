@@ -869,6 +869,10 @@ vendor/lib/libspcom.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
+# PD mapper
+vendor/bin/pd-mapper
+vendor/lib64/libpdmapper.so
+
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
@@ -967,7 +971,6 @@ vendor/bin/ATFWD-daemon|9b61dc74e23392110b6716e4a1558e2468f344de
 vendor/bin/adpl|4ee2aa7fb4363ddfcacf67800e61e5b68aedae20
 vendor/bin/ks|e8619b61e72fd06156df4b4550524cef10481131
 vendor/bin/netmgrd|992c77d8e35527245e97fd1ff1aff16ef2ad0bc3
-vendor/bin/pd-mapper|66d35617c8bfbe43f369431d8c2cfdac4ed104de
 vendor/bin/port-bridge|412f33b02d2e7f8efd4867c6a149feecbef1218b
 vendor/bin/qrtr-cfg|9786455690d4b8e60681f40ebe61fc937d2cd713
 vendor/bin/qrtr-lookup|6342b6b636327c53258d0d54c9dd93e34a3da3f7
@@ -998,7 +1001,6 @@ vendor/lib64/libnetmgr_common.so|9ea7b7af95a8adc36ddef2292b075b8c723e0500
 vendor/lib64/libnetmgr_nr_fusion.so|e20dba5520d2654f56a8cbe4b007bb77871f93b0
 vendor/lib64/libnetmgr_rmnet_ext.so|1ae234ea8eab246da3277a4e5f041618efa3a064
 vendor/lib64/libnlnetmgr.so|30774ac606a66da3d0394614664caa166cc3f714
-vendor/lib64/libpdmapper.so|b0429147b78fd080974b1db40a205af32d1476ac
 vendor/lib64/libpdnotifier.so|d83c75a6c3833cd8379e05177a4f14191e15282c
 vendor/lib64/libqcbor.so|df6a3f00d7d49e482e0ca2937f5bd708fba32ae6
 vendor/lib64/libqcrilFramework.so|da3c0216ddad60f48b1fc90b31a6d6d1114e95be
